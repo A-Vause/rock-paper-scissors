@@ -49,6 +49,8 @@ else:
 
 if choice == 0 and comp_choice == 2:
     print("You win!")
+elif choice == 1 and comp_choice == 0:
+    print("You win!")
 elif comp_choice > choice:
     print("You lose!")
 elif choice == comp_choice:

@@ -27,24 +27,13 @@ scissors = '''
 ---.__(___)
 '''
 
+game_images = [rock, paper, scissors]
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for scissors\n"))
-comp_choice = random.randint(0, 2)
-
-if choice == 0:
-    print(rock)
-elif choice == 1:
-    print(paper)
-else:
-    print(scissors)
+print(game_images[choice])
 
 print("Computer chose:")
-
-if comp_choice == 0:
-    print(rock)
-elif comp_choice == 1:
-    print(paper)
-else:
-    print(scissors)
+comp_choice = random.randint(0, 2)
+print(game_images[comp_choice])
 
 
 if choice == 0 and comp_choice == 2:
